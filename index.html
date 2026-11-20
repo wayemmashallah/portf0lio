@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- Home page: brief biography and professional photo -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of John Rio Ramos, a BS Information Technology student.">
+  <title>Home | John Rio Ramos</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar">
+    <a href="index.html" class="logo">JRR<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO: introduction and photo ========== -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text-area">
+          <p class="hero-greeting">Hi there 👋, I'm</p>
+          <h1>John Rio Ramos</h1>
+          <h2 class="hero-subtitle">I'm a <span id="typing"></span></h2>
+
+          <p class="hero-text">
+            I am an 18-year-old BS Information Technology student at Mindoro State University
+            Calapan Campus. I love spending time on my computer, and I am learning web design
+            on my way to becoming a professional programmer.
+          </p>
+
+          <div class="btn-group">
+            <a href="portfolio.html" class="btn">View My Work</a>
+            <a href="about.html" class="btn btn-outline">About Me</a>
+          </div>
+        </div>
+
+        <img src="images/me.jpg" alt="Photo of John Rio Ramos" class="hero-photo">
+      </div>
+    </section>
+
+    <!-- ========== HIGHLIGHTS ========== -->
+    <section class="section">
+      <h2 class="section-title">What I Do</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Student</h3>
+          <p>BS Information Technology at Mindoro State University Calapan Campus.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">💻</div>
+          <h3>Web Design</h3>
+          <p>Building websites using HTML and CSS.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🏀</div>
+          <h3>Basketball</h3>
+          <p>A former school varsity player who still loves playing the game.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> John Rio Ramos. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

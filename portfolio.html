@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Portfolio page: projects with descriptions -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects and works by John Rio Ramos.">
+  <title>Portfolio | John Rio Ramos</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="navbar">
+    <a href="index.html" class="logo">JRR<span>.</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+      <h1>My Portfolio</h1>
+      <p>A collection of my projects and works.</p>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="section">
+      <div class="projects-grid">
+
+        <!-- Project 1: Portfolio website -->
+        <article class="project">
+          <img src="images/project1.jpg" alt="Screenshot of my portfolio website" class="project-img">
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A multi-page personal website built from scratch using HTML and an external
+              CSS stylesheet. It includes a home, about, portfolio, and contact page.
+            </p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+
+        <!-- Project 2: Roboflow object detection -->
+        <article class="project">
+          <img src="images/project2.png" alt="Roboflow model detecting Nike shoes on two runners" class="project-img">
+          <div class="project-body">
+            <h3>Nike Shoe Detection (AI Model)</h3>
+            <p>
+              An object detection model I trained on Roboflow to recognize Nike shoes in photos.
+              I uploaded and labeled my own images, trained an RF-DETR model, and tested it on
+              new pictures, where it detected the shoes with up to 95% confidence.
+            </p>
+            <div class="tags"><span>Roboflow</span><span>AI</span><span>Computer Vision</span></div>
+          </div>
+        </article>
+
+        <!-- Project 3: FiveM clothing retexture -->
+        <article class="project">
+          <img src="images/project3.jpg" alt="Retextured clothing for a FiveM character" class="project-img">
+          <div class="project-body">
+            <h3>FiveM Clothing Retexture</h3>
+            <p>
+              Custom clothing designs for FiveM, a multiplayer modification of GTA V.
+              I edited the textures of existing clothes to create new designs and colors,
+              then tested them in-game on a player character.
+            </p>
+            <div class="tags"><span>FiveM</span><span>Texturing</span><span>Graphic Design</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> John Rio Ramos. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
